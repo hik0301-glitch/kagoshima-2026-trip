@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>三黃一陳2026鹿兒島大冒險｜v10大眾運輸優先</title>
+<style>
+:root {
+  --bg:#f3f5f8; --card:#fff; --ink:#172033; --muted:#667085; --line:#d9dee8;
+  --blue:#2457a7; --blue2:#eaf2ff; --shadow:0 8px 24px rgba(16,24,40,.07);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.55}
+main{max-width:1120px;margin:0 auto;padding:28px 18px 60px}
+.hero{background:linear-gradient(135deg,#153c75,#2f6fbd);color:white;border-radius:22px;padding:30px;margin-bottom:20px;box-shadow:var(--shadow)}
+h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)} h2{margin:0 0 14px;font-size:22px;line-height:1.5}
+.legend,.notice,.day{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:18px 0;box-shadow:var(--shadow)}
+.legend span{display:inline-block;margin:4px 10px 4px 0;padding:6px 10px;background:#f8fafc;border:1px solid #e6eaf0;border-radius:999px}
+.notice{background:var(--blue2);border-left:5px solid var(--blue)}
+.day-distance{font-weight:800;color:var(--blue);margin-left:8px;white-space:nowrap}
+.route-link{display:inline-block;margin-left:8px;padding:2px 8px;border:1px solid #b7c8e8;border-radius:999px;background:#f4f8ff;color:var(--blue);font-size:14px;font-weight:800;text-decoration:none}
+.route-link:hover{background:#e4efff}
+table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:12px;table-layout:auto}
+th,td{border-bottom:1px solid #e6eaf0;padding:11px 12px;vertical-align:top}
+th{background:#f8fafc;color:var(--muted);text-align:left;font-size:13px}
+td.time{font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.name{font-weight:700;min-width:240px}
+a{color:var(--blue);text-decoration:none;border-bottom:1px dotted #98a2b3}
+.links{margin-top:5px;font-size:13px;color:var(--muted)} .links a{margin-right:10px}
+.footer{color:var(--muted);font-size:13px;margin-top:18px}
+@media(max-width:720px){main{padding:14px 10px 40px}.hero{border-radius:16px;padding:22px}table{font-size:14px}td.name{min-width:180px}}
+@media print{body{background:#fff}.hero,.legend,.notice,.day{box-shadow:none}.day{break-inside:avoid}a{color:#000;border:0}.route-link{border:0;background:transparent;color:#000}}
+
+.exit-note{margin-top:6px;padding:6px 8px;border-left:3px solid #f59e0b;background:#fff8e6;border-radius:8px;color:#7a4b00;font-size:13px}
+.appendix h2{margin-bottom:10px}.appendix h3{margin:18px 0 8px}.appendix table{margin-top:8px}.source-list li{margin:4px 0}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>三黃一陳2026鹿兒島大冒險</h1>
+<p>2026/07/11–07/18｜KOJ 進出｜Sheraton Kagoshima 每日返回</p>
+<p>v8 修復版：移除長字串 title／data-description 屬性，避免瀏覽器把 URL 或屬性文字渲染到畫面；所有官方與地圖連結仍保留在說明欄。</p>
+</section>
+<section class="legend">
+<strong>圖例：</strong>
+<span>🍴 用餐</span>
+<span>🌱 戶外景點</span>
+<span>🕍 室內景點</span>
+<span>🛍️ 購物</span>
+<span>🚃 大眾運輸</span>
+<span>🚗 自駕</span>
+<span>💤 飯店休息</span>
+</section>
+<section class="notice">「路線圖」使用日文／英文正式名稱與地址級字串。大眾運輸名稱附官方連結與成人票價；進出車站、電停、巴士總站時，已在說明欄增加最近出口或乘車點。</section>
+<section class="day">
+<h2>Day 1｜7/11（六）抵達鹿兒島 <a class="route-link" href="https://www.google.com/maps/dir/Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan/Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/%E3%81%84%E3%81%A1%E3%81%AB%E3%81%83%E3%81%95%E3%82%93%20%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E9%B9%BF%E5%85%90%E5%B3%B6%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/%E3%83%93%E3%83%83%E3%82%AF%E3%82%AB%E3%83%A1%E3%83%A9%20%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E9%A7%85%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E4%B8%80%E7%95%AA%E8%A1%97%E5%BA%97%2C%2022-16%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/%E5%BB%BB%E3%82%8B%E5%AF%BF%E5%8F%B8%20%E3%82%81%E3%81%A3%E3%81%91%E3%82%82%E3%82%93%20%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E9%A7%85%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">47 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">11:10</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">鹿兒島機場 KOJ</a></td>
+<td>抵達鹿兒島；入境與領行李。<div class="exit-note">出口/乘車點：最近乘車點：鹿兒島空港 8 號月台（鹿兒島市內線）。航廈出來跟隨「バスのりば」指示。</div><div class="links"><a href="https://www.koj-ab.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">12:10</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">鹿兒島中央站</a></td>
+<td><a href="https://nangoku-kotsu.com/ashuttle/kagoshima/" rel="noopener" target="_blank">機場連絡巴士</a>（成人 ¥1,500） 到鹿兒島中央站；不可預約，先到先上。<div class="exit-note">出口/乘車點：下車/轉乘：機場巴士到鹿兒島中央 Terminal Building；前往 Sheraton 接駁車請到南國交通巴士總站 3 號，若改計程車則往鹿兒島中央站 東口（桜島口）方向。</div><div class="links"><a href="https://www.jrkagoshimacity.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:45</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>鹿兒島中央站到飯店改搭 <a href="https://dailysocial.sheratonkagoshima.com/resourcefiles/pdf/shuttle-schedule.pdf" rel="noopener" target="_blank">Sheraton 免費接駁車</a>（免費）；13:45 自鹿兒島中央 Terminal Building 1F「南國交通巴士總站 3 號乘車處」發車，約 14:00 抵達飯店。滿座、延誤或行李／小孩狀況不佳時才改計程車。<div class="exit-note">出口/乘車點：鹿兒島中央站東口・桜島口側；前往鹿兒島中央 Terminal Building 1F，南國交通巴士總站 3 號乘車處。</div><div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">飯店官方</a> <a href="https://dailysocial.sheratonkagoshima.com/resourcefiles/pdf/shuttle-schedule.pdf" rel="noopener" target="_blank">接駁 PDF</a> <a href="https://www.google.com/maps/search/?api=1&query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">15:00</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>Check-in／溫泉休息；機場後不先逛街。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">16:30</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">鹿兒島中央站</a></td>
+<td><a href="https://dailysocial.sheratonkagoshima.com/resourcefiles/pdf/shuttle-schedule.pdf" rel="noopener" target="_blank">Sheraton 免費接駁車</a>（成人 免費） 或計程車出門；此後才開始走 Day 1 行程。<div class="exit-note">出口/乘車點：Sheraton 接駁車下車/上車點：鹿兒島中央 Terminal Building 1F 南國交通巴士總站 3 號；要去 AMU/BIC/中央一番街，往鹿兒島中央站 東口（桜島口）與 AMU Plaza 方向。</div><div class="links"><a href="https://www.jrkagoshimacity.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">16:45</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%84%E3%81%A1%E3%81%AB%E3%81%83%E3%81%95%E3%82%93%20%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E9%B9%BF%E5%85%90%E5%B3%B6%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">いちにぃさん AMU Plaza 鹿兒島店</a></td>
+<td>延後午餐／早晚餐；抵達日主餐。<div class="links"><a href="https://ichiniisan.jp/access/amu/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%84%E3%81%A1%E3%81%AB%E3%81%83%E3%81%95%E3%82%93%20%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E9%B9%BF%E5%85%90%E5%B3%B6%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">17:40</td>
+<td class="name">🛍️ <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%93%E3%83%83%E3%82%AF%E3%82%AB%E3%83%A1%E3%83%A9%20%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E9%A7%85%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">ビックカメラ 鹿兒島中央駅店</a></td>
+<td>中央站直結；Apple 商品、Nintendo、相機、錶款與免稅採買。<div class="links"><a href="https://www.biccamera.com/bc/i/shop/shoplist/shop107.jsp" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%93%E3%83%83%E3%82%AF%E3%82%AB%E3%83%A1%E3%83%A9%20%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E9%A7%85%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">18:20</td>
+<td class="name">🛍️ <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E4%B8%80%E7%95%AA%E8%A1%97%E5%BA%97%2C%2022-16%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">ドン・キホーテ 鹿兒島中央一番街店</a></td>
+<td>中央站步行範圍；採買零食、飲料、日用品。<div class="links"><a href="https://www.donki.com/store/shop_detail.php?shop_id=678" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E4%B8%80%E7%95%AA%E8%A1%97%E5%BA%97%2C%2022-16%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">19:15</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%BB%BB%E3%82%8B%E5%AF%BF%E5%8F%B8%20%E3%82%81%E3%81%A3%E3%81%91%E3%82%82%E3%82%93%20%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E9%A7%85%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">廻る寿司 めっけもん 鹿兒島中央站店</a></td>
+<td>若孩子還餓，作為輕晚餐；不餓可直接跳過回飯店。<div class="links"><a href="https://www.megumi-food.jp/mekkemon/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%BB%BB%E3%82%8B%E5%AF%BF%E5%8F%B8%20%E3%82%81%E3%81%A3%E3%81%91%E3%82%82%E3%82%93%20%E9%B9%BF%E5%85%90%E5%B3%B6%E4%B8%AD%E5%A4%AE%E9%A7%85%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">20:30</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>回飯店；可用 <a href="https://dailysocial.sheratonkagoshima.com/resourcefiles/pdf/shuttle-schedule.pdf" rel="noopener" target="_blank">Sheraton 免費接駁車</a>（成人 免費） 或計程車。<div class="exit-note">出口/乘車點：若從中央站搭 Sheraton 接駁車回飯店：南國交通巴士總站 3 號，末班為 21:15。</div><div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 2｜7/12（日）仙巖園與薩摩文化 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/Sengan-en%20%2F%20Shoko%20Shuseikan%20%2F%20Satsuma%20Kiriko%20%2F%20Ohkatei%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan/Shiroyama%20Observatory%2C%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/%E5%A4%A9%E6%96%87%E9%A4%A8%E9%80%9A%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E6%9D%B1%E5%8D%83%E7%9F%B3%E7%94%BA%2C%20Japan/%E9%BB%92%E3%81%8B%E3%81%A4%E4%BA%AD%20%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">15 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">08:30</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">鹿兒島中央站</a></td>
+<td>Sheraton 早上無接駁，建議計程車到中央站。<div class="exit-note">出口/乘車點：JR 進站建議：鹿兒島中央站 東口（桜島口）側進入，走在來線改札口搭日豐本線往仙巖園。</div><div class="links"><a href="https://www.jrkagoshimacity.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">09:00</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sengan-en%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">仙巖園</a></td>
+<td><a href="https://www.jrkyushu.co.jp/railway/station/1237198_1601.html" rel="noopener" target="_blank">JR 日豐本線</a>（成人 ¥240） 鹿兒島中央→仙巖園站。<div class="exit-note">出口/乘車點：JR 仙巖園站：官方站頁未標示出口編號；站體簡單，出改札後往仙巖園/磯地區方向步行。</div><div class="links"><a href="https://www.senganen.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sengan-en%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">09:15</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%9A%E5%8F%A4%E9%9B%86%E6%88%90%E9%A4%A8%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">尚古集成館</a></td>
+<td>島津家與薩摩工業化；先看室內館。<div class="links"><a href="https://www.senganen.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%9A%E5%8F%A4%E9%9B%86%E6%88%90%E9%A4%A8%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:15</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sengan-en%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">仙巖園</a></td>
+<td>庭園與櫻島景觀。<div class="links"><a href="https://www.senganen.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sengan-en%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">11:15</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%96%A9%E6%91%A9%E5%88%87%E5%AD%90%E5%B7%A5%E5%A0%B4%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">薩摩切子工場</a></td>
+<td>避開 12:00–13:00 暫停作業。<div class="links"><a href="https://www.senganen.jp/how-to-walk/adjacent-facility/shimadzu-satsuma-kiriko-glassworks/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%96%A9%E6%91%A9%E5%88%87%E5%AD%90%E5%B7%A5%E5%A0%B4%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">12:00</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E8%8F%AF%E4%BA%AD%20%E4%BB%99%E5%B7%8C%E5%9C%92%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">桜華亭／仙巖園內</a></td>
+<td>園區內午餐，不拉長移動。<div class="links"><a href="https://www.senganen.jp/food/ohkatei-restaurant/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E8%8F%AF%E4%BA%AD%20%E4%BB%99%E5%B7%8C%E5%9C%92%2C%209700-1%20Yoshinocho%2C%20Kagoshima%2C%20Kagoshima%20892-0871%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:45</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=Shiroyama%20Observatory%2C%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">城山展望台</a></td>
+<td>計程車前往；若改搭 City View，成人 ¥230。<div class="links"><a href="https://www.city.kagoshima.lg.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Shiroyama%20Observatory%2C%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">15:00</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A9%E6%96%87%E9%A4%A8%E9%80%9A%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E6%9D%B1%E5%8D%83%E7%9F%B3%E7%94%BA%2C%20Japan" rel="noopener" target="_blank">天文館商圈</a></td>
+<td>City View 或市電移動；<a href="https://www.city.kagoshima.lg.jp/faq-bunka-sport/kanshin/q26.html" rel="noopener" target="_blank">City View</a>（成人 ¥230）／<a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170）。<div class="exit-note">出口/乘車點：市電/巴士停靠點：天文館通為地面電停/巴士停，無出口編號；下車往東千石町、天文館アーケード方向。</div><div class="links"><a href="https://www.kagoshima-yokanavi.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A9%E6%96%87%E9%A4%A8%E9%80%9A%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E6%9D%B1%E5%8D%83%E7%9F%B3%E7%94%BA%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">17:30</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BB%92%E3%81%8B%E3%81%A4%E4%BA%AD%20%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">黒かつ亭 天文館店</a></td>
+<td>黑豚炸豬排晚餐，家庭接受度高。<div class="links"><a href="https://www.kurokatutei.net/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BB%92%E3%81%8B%E3%81%A4%E4%BA%AD%20%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">19:30</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>返回飯店；<a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170）＋步行，或計程車。<div class="exit-note">出口/乘車點：若搭市電回飯店：天文館通等地面電停無出口編號；下車後依 Google Maps 步行，或直接改計程車。</div><div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 3｜7/13（一）櫻島火山與防災 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/%E9%B9%BF%E5%85%90%E5%B3%B6%E6%B8%AF%E6%A1%9C%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%204-1%20Honkoshinmachi%2C%20Kagoshima%2C%20Kagoshima%20892-0814%2C%20Japan/Sakurajima%20Visitor%20Center%2C%201722-29%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan/%E6%BA%B6%E5%B2%A9%E3%81%AA%E3%81%8E%E3%81%95%E5%85%AC%E5%9C%92%E8%B6%B3%E6%B9%AF%2C%201722-3%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan/%E6%A1%9C%E5%B3%B6%E5%9B%BD%E9%9A%9B%E7%81%AB%E5%B1%B1%E7%A0%82%E9%98%B2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Yunohira%20Observatory%2C%201025%20Sakurajimakoikecho%2C%20Kagoshima%2C%20Kagoshima%20891-1418%2C%20Japan/MINATO%20CAFE%2C%2061-4%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan/%E9%B9%BF%E5%85%90%E5%B3%B6%E6%B8%AF%E6%A1%9C%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%204-1%20Honkoshinmachi%2C%20Kagoshima%2C%20Kagoshima%20892-0814%2C%20Japan/%E3%81%B5%E3%81%81%E3%81%BF%E3%82%8A%E5%BA%B5%E3%81%AF%E3%81%84%E3%81%8B%E3%82%89%E4%BA%AD%20%E4%B8%8E%E6%AC%A1%E9%83%8E%E6%9C%AC%E5%BA%97%2C%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">30 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">08:50</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E6%B8%AF%E6%A1%9C%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%204-1%20Honkoshinmachi%2C%20Kagoshima%2C%20Kagoshima%20892-0814%2C%20Japan" rel="noopener" target="_blank">鹿兒島港櫻島渡輪碼頭</a></td>
+<td>大眾運輸優先：Sheraton 早上接駁車 10:00 才開始，無法銜接本時段；改採步行至市電站＋市電至水族館口＋步行到碼頭，抓 30–40 分鐘。萬一改計程車，Sheraton→鹿兒島港櫻島渡輪碼頭估約 ¥1,700–¥2,500。<div class="exit-note">出口/乘車點：水族館口電停下車後步行至鹿児島港桜島フェリーターミナル；碼頭無車站出口號碼，跟隨步行乘船/旅客通路。</div><div class="links"><a href="https://www.city.kagoshima.lg.jp/sakurajima-ferry/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E6%B8%AF%E6%A1%9C%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%204-1%20Honkoshinmachi%2C%20Kagoshima%2C%20Kagoshima%20892-0814%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">09:15</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E5%B3%B6%E6%B8%AF%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%2061-4%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">櫻島港</a></td>
+<td>搭 <a href="https://www.city.kagoshima.lg.jp/sakurajima-ferry/unchin/unchin.html" rel="noopener" target="_blank">櫻島渡輪</a>（成人 ¥250） 抵達櫻島港。<div class="exit-note">出口/乘車點：碼頭進出：桜島港フェリーターミナル，無出口號碼；出碼頭後可步行至 Visitor Center。</div><div class="links"><a href="https://www.city.kagoshima.lg.jp/sakurajima-ferry/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E5%B3%B6%E6%B8%AF%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%2061-4%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">09:25</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sakurajima%20Visitor%20Center%2C%201722-29%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">櫻島遊客中心</a></td>
+<td>火山形成、噴發歷史、櫻島生活。<div class="links"><a href="https://visitor.sakurajima.gr.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sakurajima%20Visitor%20Center%2C%201722-29%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:10</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%BA%B6%E5%B2%A9%E3%81%AA%E3%81%8E%E3%81%95%E5%85%AC%E5%9C%92%E8%B6%B3%E6%B9%AF%2C%201722-3%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">熔岩渚公園足湯</a></td>
+<td>短停留，保留 Island View B 路線銜接。<div class="links"><a href="https://www.sakurajima.gr.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%BA%B6%E5%B2%A9%E3%81%AA%E3%81%8E%E3%81%95%E5%85%AC%E5%9C%92%E8%B6%B3%E6%B9%AF%2C%201722-3%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:36</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%AB%BB%E5%B3%B6%E9%81%8A%E5%AE%A2%E4%B8%AD%E5%BF%83%E7%AB%99%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">櫻島遊客中心站</a></td>
+<td>搭 <a href="https://www.kotsu-city-kagoshima.jp/sakurajima-tabi/" rel="noopener" target="_blank">Sakurajima Island View</a>（成人 一日券 ¥500／單程 ¥230）；需搭 B 路線進砂防中心。<div class="exit-note">出口/乘車點：Island View 乘車點：Visitor Center 附近巴士站，無出口編號；本段需搭 B 路線進砂防中心。</div><div class="links"> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%AB%BB%E5%B3%B6%E9%81%8A%E5%AE%A2%E4%B8%AD%E5%BF%83%E7%AB%99%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:47</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E5%B3%B6%E5%9B%BD%E9%9A%9B%E7%81%AB%E5%B1%B1%E7%A0%82%E9%98%B2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">櫻島國際火山砂防中心</a></td>
+<td>土石流、防災工程、火山監測。<div class="links"><a href="https://www.qsr.mlit.go.jp/osumi/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E5%B3%B6%E5%9B%BD%E9%9A%9B%E7%81%AB%E5%B1%B1%E7%A0%82%E9%98%B2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">12:10</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=Yunohira%20Observatory%2C%201025%20Sakurajimakoikecho%2C%20Kagoshima%2C%20Kagoshima%20891-1418%2C%20Japan" rel="noopener" target="_blank">湯之平展望所</a></td>
+<td>續搭 <a href="https://www.kotsu-city-kagoshima.jp/sakurajima-tabi/" rel="noopener" target="_blank">Sakurajima Island View</a>（成人 一日券 ¥500／單程 ¥230）。<div class="links"><a href="https://www.sakurajima.gr.jp/spot/4089.html" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Yunohira%20Observatory%2C%201025%20Sakurajimakoikecho%2C%20Kagoshima%2C%20Kagoshima%20891-1418%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:25</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=MINATO%20CAFE%2C%2061-4%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">MINATO CAFE／櫻島港</a></td>
+<td>回港後直接午餐，不繞路。<div class="links"><a href="https://www.sakurajima.gr.jp/spot/4104.html" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=MINATO%20CAFE%2C%2061-4%20Sakurajimayokoyamacho%2C%20Kagoshima%2C%20Kagoshima%20891-1419%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">14:45</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E6%B8%AF%E6%A1%9C%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%204-1%20Honkoshinmachi%2C%20Kagoshima%2C%20Kagoshima%20892-0814%2C%20Japan" rel="noopener" target="_blank">鹿兒島港櫻島渡輪碼頭</a></td>
+<td><a href="https://www.city.kagoshima.lg.jp/sakurajima-ferry/unchin/unchin.html" rel="noopener" target="_blank">櫻島渡輪</a>（成人 ¥250） 返回鹿兒島市區。<div class="exit-note">出口/乘車點：碼頭進出：鹿児島港桜島フェリーターミナル，無出口號碼；返回市區後建議計程車接續。</div><div class="links"><a href="https://www.city.kagoshima.lg.jp/sakurajima-ferry/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E6%B8%AF%E6%A1%9C%E5%B3%B6%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%2C%204-1%20Honkoshinmachi%2C%20Kagoshima%2C%20Kagoshima%20892-0814%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">18:30</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%B5%E3%81%81%E3%81%BF%E3%82%8A%E5%BA%B5%E3%81%AF%E3%81%84%E3%81%8B%E3%82%89%E4%BA%AD%20%E4%B8%8E%E6%AC%A1%E9%83%8E%E6%9C%AC%E5%BA%97%2C%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">ふぁみり庵はいから亭 与次郎本店</a></td>
+<td>近飯店方向的大型家庭餐廳。<div class="links"><a href="https://www.kousei-grp.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%B5%E3%81%81%E3%81%BF%E3%82%8A%E5%BA%B5%E3%81%AF%E3%81%84%E3%81%8B%E3%82%89%E4%BA%AD%20%E4%B8%8E%E6%AC%A1%E9%83%8E%E6%9C%AC%E5%BA%97%2C%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">20:00</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>返回飯店。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 4｜7/14（二）知覽、唐船峽、指宿砂浴｜租車第 1 日 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/ORIX%20Rent%20a%20Car%20Kagoshima%20Chuo%20Station%2C%204-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/Chiran%20Samurai%20Residence%20Garden%2C%20Chirancho%20Kori%2C%20Minamikyushu%2C%20Kagoshima%2C%20Japan/%E5%B8%82%E5%96%B6%E5%94%90%E8%88%B9%E5%B3%A1%E3%81%9D%E3%81%86%E3%82%81%E3%82%93%E6%B5%81%E3%81%97%2C%20Kaimon%20Juccho%2C%20Ibusuki%2C%20Kagoshima%2C%20Japan/%E6%99%82%E9%81%8A%E9%A4%A8COCCO%E3%81%AF%E3%81%97%E3%82%80%E3%82%8C%2C%202290%20Juccho%2C%20Ibusuki%2C%20Kagoshima%20891-0402%2C%20Japan/%E7%A0%82%E3%82%80%E3%81%97%E4%BC%9A%E9%A4%A8%E7%A0%82%E6%A5%BD%2C%205-25-18%20Yunohama%2C%20Ibusuki%2C%20Kagoshima%20891-0406%2C%20Japan/misumi%20STORE%20%E9%B9%BF%E5%85%90%E5%B3%B6%2C%20%E3%82%AA%E3%83%97%E3%82%B7%E3%82%A2%E3%83%9F%E3%82%B9%E3%83%9F%201F%2C%202-3-5%20Usuki%2C%20Kagoshima%2C%20Kagoshima%20890-0073%2C%20Japan/%E5%AF%BF%E5%8F%B8%E3%81%BE%E3%81%A9%E3%81%8B%20%E3%83%95%E3%83%AC%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%97%2C%201-11-1%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">176 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">08:00</td>
+<td class="name">🚗 <a href="https://www.google.com/maps/search/?api=1&amp;query=ORIX%20Rent%20a%20Car%20Kagoshima%20Chuo%20Station%2C%204-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">ORIX 鹿兒島中央站前店</a></td>
+<td>取車；車型、保險、ETC 需預約；不需要兒童座椅。<div class="exit-note">出口/乘車點：取車最近方向：鹿兒島中央站 東口（桜島口）/中央町側；從 Sheraton 早上無接駁，建議計程車直達店門口。</div><div class="links"><a href="https://car.orix.co.jp/shops/?shops_pk=756" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=ORIX%20Rent%20a%20Car%20Kagoshima%20Chuo%20Station%2C%204-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">08:25</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>開回飯店接家人。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">09:45</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=Chiran%20Samurai%20Residence%20Garden%2C%20Chirancho%20Kori%2C%20Minamikyushu%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">知覽武家屋敷庭園</a></td>
+<td>薩摩武家聚落；和平會館維持移除。<div class="links"><a href="https://chiran-bukeyashiki.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Chiran%20Samurai%20Residence%20Garden%2C%20Chirancho%20Kori%2C%20Minamikyushu%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">11:45</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B8%82%E5%96%B6%E5%94%90%E8%88%B9%E5%B3%A1%E3%81%9D%E3%81%86%E3%82%81%E3%82%93%E6%B5%81%E3%81%97%2C%20Kaimon%20Juccho%2C%20Ibusuki%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">唐船峽流水麵</a></td>
+<td>本日主題午餐；建議預約 11:45 四人席。<div class="links"><a href="https://www.ibusuki.or.jp/eat/somen/ibusukicity/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B8%82%E5%96%B6%E5%94%90%E8%88%B9%E5%B3%A1%E3%81%9D%E3%81%86%E3%82%81%E3%82%93%E6%B5%81%E3%81%97%2C%20Kaimon%20Juccho%2C%20Ibusuki%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:40</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%99%82%E9%81%8A%E9%A4%A8COCCO%E3%81%AF%E3%81%97%E3%82%80%E3%82%8C%2C%202290%20Juccho%2C%20Ibusuki%2C%20Kagoshima%20891-0402%2C%20Japan" rel="noopener" target="_blank">時遊館 COCCO はしむれ</a></td>
+<td>火山灰埋沒遺址與考古。<div class="links"><a href="https://www.city.ibusuki.lg.jp/cocco/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%99%82%E9%81%8A%E9%A4%A8COCCO%E3%81%AF%E3%81%97%E3%82%80%E3%82%8C%2C%202290%20Juccho%2C%20Ibusuki%2C%20Kagoshima%20891-0402%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">15:20</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A0%82%E3%82%80%E3%81%97%E4%BC%9A%E9%A4%A8%E7%A0%82%E6%A5%BD%2C%205-25-18%20Yunohama%2C%20Ibusuki%2C%20Kagoshima%20891-0406%2C%20Japan" rel="noopener" target="_blank">砂むし会館 砂樂</a></td>
+<td>指宿砂蒸溫泉；現場排隊。<div class="links"><a href="https://www.ibusuki.or.jp/spa/sunamushi/post-38/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A0%82%E3%82%80%E3%81%97%E4%BC%9A%E9%A4%A8%E7%A0%82%E6%A5%BD%2C%205-25-18%20Yunohama%2C%20Ibusuki%2C%20Kagoshima%20891-0406%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">18:30</td>
+<td class="name">🛍️ <a href="https://www.google.com/maps/search/?api=1&amp;query=misumi%20STORE%20%E9%B9%BF%E5%85%90%E5%B3%B6%2C%20%E3%82%AA%E3%83%97%E3%82%B7%E3%82%A2%E3%83%9F%E3%82%B9%E3%83%9F%201F%2C%202-3-5%20Usuki%2C%20Kagoshima%2C%20Kagoshima%20890-0073%2C%20Japan" rel="noopener" target="_blank">misumi STORE Apple 專門店</a></td>
+<td>Apple Premium Reseller；自駕回市區順路短停。<div class="links"><a href="https://misumi-store.net/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=misumi%20STORE%20%E9%B9%BF%E5%85%90%E5%B3%B6%2C%20%E3%82%AA%E3%83%97%E3%82%B7%E3%82%A2%E3%83%9F%E3%82%B9%E3%83%9F%201F%2C%202-3-5%20Usuki%2C%20Kagoshima%2C%20Kagoshima%20890-0073%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">19:15</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AF%BF%E5%8F%B8%E3%81%BE%E3%81%A9%E3%81%8B%20%E3%83%95%E3%83%AC%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%97%2C%201-11-1%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">寿司まどか Frespo Jungle Park 店</a></td>
+<td>自駕回程後選近飯店、有停車的壽司店。<div class="links"><a href="https://www.kousei-grp.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AF%BF%E5%8F%B8%E3%81%BE%E3%81%A9%E3%81%8B%20%E3%83%95%E3%83%AC%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%97%2C%201-11-1%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">20:45</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>連租兩天，車停飯店一晚；停車費約 ¥1,500。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 5｜7/15（三）霧島神宮、高千穗牧場、上野原｜租車第 2 日 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/Kirishima%20Jingu%2C%202608-5%20Kirishimataguchi%2C%20Kirishima%2C%20Kagoshima%20899-4201%2C%20Japan/%E9%AB%98%E5%8D%83%E7%A9%82%E7%89%A7%E5%A0%B4%2C%205265-103%20Yoshinomotocho%2C%20Miyakonojo%2C%20Miyazaki%2C%20Japan/%E4%B8%8A%E9%87%8E%E5%8E%9F%E7%B8%84%E6%96%87%E3%81%AE%E6%A3%AE%2C%201-1%20Kokubukamikogawa%2C%20Kirishima%2C%20Kagoshima%2C%20Japan/ORIX%20Rent%20a%20Car%20Kagoshima%20Chuo%20Station%2C%204-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">129 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">07:00</td>
+<td class="name">🚗 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>提早出發避開市區尖峰。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">08:30</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kirishima%20Jingu%2C%202608-5%20Kirishimataguchi%2C%20Kirishima%2C%20Kagoshima%20899-4201%2C%20Japan" rel="noopener" target="_blank">霧島神宮</a></td>
+<td>天孫降臨神話與霧島信仰。<div class="links"><a href="https://kirishimajingu.or.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kirishima%20Jingu%2C%202608-5%20Kirishimataguchi%2C%20Kirishima%2C%20Kagoshima%20899-4201%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:10</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E5%8D%83%E7%A9%82%E7%89%A7%E5%A0%B4%2C%205265-103%20Yoshinomotocho%2C%20Miyakonojo%2C%20Miyazaki%2C%20Japan" rel="noopener" target="_blank">高千穗牧場</a></td>
+<td>親子活動與牧場景觀。<div class="links"><a href="https://www.takachiho-bokujou.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E5%8D%83%E7%A9%82%E7%89%A7%E5%A0%B4%2C%205265-103%20Yoshinomotocho%2C%20Miyakonojo%2C%20Miyazaki%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">11:45</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E5%8D%83%E7%A9%82%E7%89%A7%E5%A0%B4%20%E3%81%BE%E3%81%8D%E3%81%B0%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%2C%205265-103%20Yoshinomotocho%2C%20Miyakonojo%2C%20Miyazaki%2C%20Japan" rel="noopener" target="_blank">高千穗牧場 まきばのレストラン</a></td>
+<td>牧場內午餐，減少移動。<div class="links"><a href="https://www.takachiho-bokujou.co.jp/oneday/restaurant/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E5%8D%83%E7%A9%82%E7%89%A7%E5%A0%B4%20%E3%81%BE%E3%81%8D%E3%81%B0%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%2C%205265-103%20Yoshinomotocho%2C%20Miyakonojo%2C%20Miyazaki%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:30</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%8A%E9%87%8E%E5%8E%9F%E7%B8%84%E6%96%87%E3%81%AE%E6%A3%AE%2C%201-1%20Kokubukamikogawa%2C%20Kirishima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">上野原繩文之森</a></td>
+<td>繩文聚落、火山地層、戶外考古。<div class="links"><a href="https://www.jomon-no-mori.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%8A%E9%87%8E%E5%8E%9F%E7%B8%84%E6%96%87%E3%81%AE%E6%A3%AE%2C%201-1%20Kokubukamikogawa%2C%20Kirishima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">16:50</td>
+<td class="name">🚗 <a href="https://www.google.com/maps/search/?api=1&amp;query=ORIX%20Rent%20a%20Car%20Kagoshima%20Chuo%20Station%2C%204-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">ORIX 鹿兒島中央站前店</a></td>
+<td>還車；租車行程結束。<div class="exit-note">出口/乘車點：還車後若往天文館：回鹿兒島中央站東口側搭市電，或直接計程車；中央站東側巴士/市電節點較近。</div><div class="links"><a href="https://car.orix.co.jp/shops/?shops_pk=756" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=ORIX%20Rent%20a%20Car%20Kagoshima%20Chuo%20Station%2C%204-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">18:30</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">さつま路／天文館</a></td>
+<td>還車後吃鹿兒島郷土料理；建議訂位。<div class="links"><a href="https://www.satumaji.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">20:30</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>返回飯店；可用 <a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170） 或計程車。<div class="exit-note">出口/乘車點：若搭市電回飯店：天文館通等地面電停無出口編號；帶孩子或購物袋多時建議計程車。</div><div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 6｜7/16（四）科學館、黎明館、妖怪展、六月燈 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%AB%8B%E7%A7%91%E5%AD%A6%E9%A4%A8%2C%202-31-18%20Kamoike%2C%20Kagoshima%2C%20Kagoshima%20890-0063%2C%20Japan/FAMILIARE%20KITCHEN%20%E3%83%95%E3%83%AC%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%97%2C%201-11-1%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%AD%B4%E5%8F%B2%E3%83%BB%E7%BE%8E%E8%A1%93%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%BB%8E%E6%98%8E%E9%A4%A8%2C%207-2%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%20892-0853%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/%E5%A4%A9%E6%96%87%E9%A4%A8%E3%82%80%E3%81%98%E3%82%83%E3%81%8D%20%E6%9C%AC%E5%BA%97%2C%205-8%20Sennichicho%2C%20Kagoshima%2C%20Kagoshima%20892-0843%2C%20Japan/%E7%85%A7%E5%9B%BD%E7%A5%9E%E7%A4%BE%2C%2019-35%20Terukunicho%2C%20Kagoshima%2C%20Kagoshima%20892-0841%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">18 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">09:30</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%AB%8B%E7%A7%91%E5%AD%A6%E9%A4%A8%2C%202-31-18%20Kamoike%2C%20Kagoshima%2C%20Kagoshima%20890-0063%2C%20Japan" rel="noopener" target="_blank">鹿兒島市立科學館</a></td>
+<td>水族館已移除；科學館 09:30 開館；去程可用 <a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170）。<div class="exit-note">出口/乘車點：市電下車參考：鴨池/郡元一帶地面電停無出口編號；下車後往鹿児島市立科学館方向步行。</div><div class="links"><a href="https://www.k-kagaku.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%AB%8B%E7%A7%91%E5%AD%A6%E9%A4%A8%2C%202-31-18%20Kamoike%2C%20Kagoshima%2C%20Kagoshima%20890-0063%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:10</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%AB%8B%E7%A7%91%E5%AD%A6%E9%A4%A8%2C%202-31-18%20Kamoike%2C%20Kagoshima%2C%20Kagoshima%20890-0063%2C%20Japan" rel="noopener" target="_blank">鹿兒島市立科學館</a></td>
+<td>宇宙劇場選配，依當日場次決定。<div class="links"><a href="https://www.k-kagaku.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%AB%8B%E7%A7%91%E5%AD%A6%E9%A4%A8%2C%202-31-18%20Kamoike%2C%20Kagoshima%2C%20Kagoshima%20890-0063%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">12:00</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=FAMILIARE%20KITCHEN%20%E3%83%95%E3%83%AC%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%97%2C%201-11-1%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">FAMILIARE KITCHEN／Frespo Jungle Park</a></td>
+<td>科學館後家庭午餐，座位與品項較穩。<div class="links"><a href="https://www.e-frespo.com/jungle/shop/index.jsp?bf=1&amp;fmt=6&amp;shopid=5013" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=FAMILIARE%20KITCHEN%20%E3%83%95%E3%83%AC%E3%82%B9%E3%83%9D%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%97%2C%201-11-1%20Yojiro%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:30</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%AD%B4%E5%8F%B2%E3%83%BB%E7%BE%8E%E8%A1%93%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%BB%8E%E6%98%8E%E9%A4%A8%2C%207-2%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%20892-0853%2C%20Japan" rel="noopener" target="_blank">鹿兒島縣歷史・美術中心 黎明館</a></td>
+<td>計程車移動，鹿兒島歷史、民俗與工藝。<div class="links"><a href="https://www.pref.kagoshima.jp/reimeikan/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%AD%B4%E5%8F%B2%E3%83%BB%E7%BE%8E%E8%A1%93%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%BB%8E%E6%98%8E%E9%A4%A8%2C%207-2%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%20892-0853%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">14:45</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%AD%B4%E5%8F%B2%E3%83%BB%E7%BE%8E%E8%A1%93%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%BB%8E%E6%98%8E%E9%A4%A8%2C%207-2%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%20892-0853%2C%20Japan" rel="noopener" target="_blank">動き出す妖怪展 KAGOSHIMA</a></td>
+<td>取代恐龍展，符合二次元興趣。<div class="links"><a href="https://events.mbc.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E6%AD%B4%E5%8F%B2%E3%83%BB%E7%BE%8E%E8%A1%93%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%BB%8E%E6%98%8E%E9%A4%A8%2C%207-2%20Shiroyamacho%2C%20Kagoshima%2C%20Kagoshima%20892-0853%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">16:30</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>祭典前回飯店休息。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">17:30</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A9%E6%96%87%E9%A4%A8%E3%82%80%E3%81%98%E3%82%83%E3%81%8D%20%E6%9C%AC%E5%BA%97%2C%205-8%20Sennichicho%2C%20Kagoshima%2C%20Kagoshima%20892-0843%2C%20Japan" rel="noopener" target="_blank">天文館むじゃき 本店</a></td>
+<td>先吃晚餐與白熊；飯店→天文館可用 <a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170） 或計程車。<div class="exit-note">出口/乘車點：市電下車參考：天文館通電停為地面月台，無出口編號；下車往千日町/天文館むじゃき方向步行。</div><div class="links"><a href="https://mujyaki.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A9%E6%96%87%E9%A4%A8%E3%82%80%E3%81%98%E3%82%83%E3%81%8D%20%E6%9C%AC%E5%BA%97%2C%205-8%20Sennichicho%2C%20Kagoshima%2C%20Kagoshima%20892-0843%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">18:40</td>
+<td class="name">🌱 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%85%A7%E5%9B%BD%E7%A5%9E%E7%A4%BE%2C%2019-35%20Terukunicho%2C%20Kagoshima%2C%20Kagoshima%20892-0841%2C%20Japan" rel="noopener" target="_blank">照國神社六月燈</a></td>
+<td>7/16 晚上安排；現場決定是否直接祭典攤販當晚餐。<div class="links"><a href="https://www.kagoshima-kankou.com/event/50798" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%85%A7%E5%9B%BD%E7%A5%9E%E7%A4%BE%2C%2019-35%20Terukunicho%2C%20Kagoshima%2C%20Kagoshima%20892-0841%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">21:25</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>返程先用市電＋Sheraton 免費接駁：照國神社步行至市電站，搭市電至鹿兒島中央站，銜接 21:15 中央站→Sheraton 接駁車；成人市電 ¥170、接駁免費。若錯過末班或小孩累了再叫計程車，照國神社→Sheraton 估約 ¥1,400–¥2,000。<div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 7｜7/17（五）樂器、動漫、腕錶巡禮 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/AMU%20Plaza%20Kagoshima%20%2F%20Shimamura%20Music%20%2F%20Bic%20Camera%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/animate%20Kagoshima%2C%2013-3%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%20892-0842%2C%20Japan/%E9%A7%BF%E6%B2%B3%E5%B1%8B%20%E9%B9%BF%E5%85%90%E5%B3%B6%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%203-15%20Nakamachi%2C%20Kagoshima%2C%20Kagoshima%20892-0827%2C%20Japan/%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%2012-15-2%20Yamanokuchicho%2C%20Kagoshima%2C%20Kagoshima%20892-0844%2C%20Japan/UNITED%20SALON%20Kagoshima%2C%2018-8%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/oomiya%20Kagoshima%2C%202-11%20Kinseicho%2C%20Kagoshima%2C%20Kagoshima%20892-0828%2C%20Japan/Rolex%20Boutique%20Yamakataya%20Kagoshima%2C%203-1%20Kinseicho%2C%20Kagoshima%2C%20Kagoshima%20892-8601%2C%20Japan/%E5%90%BE%E6%84%9B%E4%BA%BA%20%E6%9C%AC%E5%BA%97%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">9 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">09:45</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=AMU%20Plaza%20Kagoshima%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">AMU Plaza 鹿兒島</a></td>
+<td>計程車或 <a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170） 到中央站區。<div class="exit-note">出口/乘車點：鹿兒島中央站動線：AMU Plaza、島村樂器、BIC CAMERA 均在中央站 東口（桜島口）/AMU 連通區域。</div><div class="links"><a href="https://www.jrkagoshimacity.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=AMU%20Plaza%20Kagoshima%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:00</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B3%B6%E6%9D%91%E6%A5%BD%E5%99%A8%20%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E9%B9%BF%E5%85%90%E5%B3%B6%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">島村樂器 AMU Plaza 鹿兒島店</a></td>
+<td>樂器、電子樂器與配件。<div class="links"><a href="https://www.shimamura.co.jp/shop/kagoshima/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B3%B6%E6%9D%91%E6%A5%BD%E5%99%A8%20%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%97%E3%83%A9%E3%82%B6%E9%B9%BF%E5%85%90%E5%B3%B6%E5%BA%97%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">11:30</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">さつま路／天文館</a></td>
+<td>天文館午餐；中央站→天文館可用 <a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170）。<div class="exit-note">出口/乘車點：市電下車參考：天文館通電停無出口編號；下車往東千石町/天文館商店街側。</div><div class="links"><a href="https://www.satumaji.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">12:40</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=animate%20Kagoshima%2C%2013-3%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%20892-0842%2C%20Japan" rel="noopener" target="_blank">Animate 鹿兒島</a></td>
+<td>動漫、漫畫與角色商品。<div class="links"><a href="https://www.animate.co.jp/shop/kagoshima/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=animate%20Kagoshima%2C%2013-3%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%20892-0842%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">13:35</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A7%BF%E6%B2%B3%E5%B1%8B%20%E9%B9%BF%E5%85%90%E5%B3%B6%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%203-15%20Nakamachi%2C%20Kagoshima%2C%20Kagoshima%20892-0827%2C%20Japan" rel="noopener" target="_blank">駿河屋 天文館店</a></td>
+<td>二手動漫、模型、遊戲。<div class="links"><a href="https://www.suruga-ya.jp/feature/kagoshima_tenmonkan/index.html" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A7%BF%E6%B2%B3%E5%B1%8B%20%E9%B9%BF%E5%85%90%E5%B3%B6%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%203-15%20Nakamachi%2C%20Kagoshima%2C%20Kagoshima%20892-0827%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">14:45</td>
+<td class="name">🛍️ <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%2012-15-2%20Yamanokuchicho%2C%20Kagoshima%2C%20Kagoshima%20892-0844%2C%20Japan" rel="noopener" target="_blank">ドン・キホーテ 天文館店</a></td>
+<td>天文館商圈內短停；藥妝、零食、免稅補貨。<div class="links"><a href="https://www.donki.com/store/shop_detail.php?shop_id=355" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E5%A4%A9%E6%96%87%E9%A4%A8%E5%BA%97%2C%2012-15-2%20Yamanokuchicho%2C%20Kagoshima%2C%20Kagoshima%20892-0844%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">15:25</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=UNITED%20SALON%20Kagoshima%2C%2018-8%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">UNITED SALON 鹿兒島</a></td>
+<td>獨立與歐系腕錶。<div class="links"><a href="https://yoshinaga.biz/accessmap" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=UNITED%20SALON%20Kagoshima%2C%2018-8%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">16:05</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=oomiya%20Kagoshima%2C%202-11%20Kinseicho%2C%20Kagoshima%2C%20Kagoshima%20892-0828%2C%20Japan" rel="noopener" target="_blank">oomiya 鹿兒島店</a></td>
+<td>Tudor、IWC、Panerai、Grand Seiko 等。<div class="links"><a href="https://www.jw-oomiya.co.jp/pages/kagoshima" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=oomiya%20Kagoshima%2C%202-11%20Kinseicho%2C%20Kagoshima%2C%20Kagoshima%20892-0828%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">16:50</td>
+<td class="name">🕍 <a href="https://www.google.com/maps/search/?api=1&amp;query=Rolex%20Boutique%20Yamakataya%20Kagoshima%2C%203-1%20Kinseicho%2C%20Kagoshima%2C%20Kagoshima%20892-8601%2C%20Japan" rel="noopener" target="_blank">Rolex Boutique 山形屋</a></td>
+<td>Rolex 正規店；庫存不保證。<div class="links"><a href="https://www.yamakataya.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Rolex%20Boutique%20Yamakataya%20Kagoshima%2C%203-1%20Kinseicho%2C%20Kagoshima%2C%20Kagoshima%20892-8601%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">18:00</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%90%BE%E6%84%9B%E4%BA%BA%20%E6%9C%AC%E5%BA%97%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">吾愛人 本店／天文館</a></td>
+<td>最後一晚鹿兒島郷土料理；建議訂位。<div class="links"><a href="https://www.k-wakana.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%90%BE%E6%84%9B%E4%BA%BA%20%E6%9C%AC%E5%BA%97%2C%20Higashisengokucho%2C%20Kagoshima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">20:30</td>
+<td class="name">💤 <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">Sheraton Kagoshima</a></td>
+<td>返回飯店整理行李；可用 <a href="https://www.kotsu-city-kagoshima.jp/howto/" rel="noopener" target="_blank">市電</a>（成人 ¥170） 或計程車。<div class="exit-note">出口/乘車點：若搭市電回飯店：天文館通等地面電停無出口編號；最後一晚帶行李採買品多，建議計程車。</div><div class="links"><a href="https://www.marriott.com/en-us/hotels/kojsi-sheraton-kagoshima/overview/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="day">
+<h2>Day 8｜7/18（六）返回台灣 <a class="route-link" href="https://www.google.com/maps/dir/Sheraton%20Kagoshima%2C%2043-15%20Koraicho%2C%20Kagoshima%2C%20Kagoshima%20890-0051%2C%20Japan/Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan/Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan/Royal%20Host%20Kagoshima%20Airport%2C%20Kagoshima%20Airport%20Terminal%202F%2C%20Kirishima%2C%20Kagoshima%2C%20Japan/Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">路線圖</a> <span class="day-distance">41 km</span></h2>
+<table>
+<thead><tr><th>到達</th><th>名稱</th><th>說明／連結</th></tr></thead>
+<tbody>
+<tr>
+<td class="time">08:15</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">鹿兒島中央站</a></td>
+<td>Sheraton 早上無接駁，固定計程車。<div class="exit-note">出口/乘車點：機場巴士乘車點：鹿兒島中央 Terminal Building 1F，南國交通巴士總站 1 號為鹿兒島空港行；若從 JR 站內前往，走東口（桜島口）側至 Terminal Building。</div><div class="links"><a href="https://www.jrkagoshimacity.com/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima-Chuo%20Station%2C%201-1%20Chuocho%2C%20Kagoshima%2C%20Kagoshima%20890-0053%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">08:45</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">鹿兒島機場 KOJ</a></td>
+<td>中央站搭 <a href="https://nangoku-kotsu.com/ashuttle/kagoshima/" rel="noopener" target="_blank">機場連絡巴士</a>（成人 ¥1,500） 前往 KOJ。<div class="exit-note">出口/乘車點：機場巴士到達後進航廈；無車站出口號碼。Royal Host 位於航廈 2F。</div><div class="links"><a href="https://www.koj-ab.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">10:15</td>
+<td class="name">🍴 <a href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Host%20Kagoshima%20Airport%2C%20Kagoshima%20Airport%20Terminal%202F%2C%20Kirishima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">Royal Host 鹿兒島空港店</a></td>
+<td>機場內早午餐／輕午餐。<div class="links"><a href="https://locations.royalhost.jp/detail/124605/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Host%20Kagoshima%20Airport%2C%20Kagoshima%20Airport%20Terminal%202F%2C%20Kirishima%2C%20Kagoshima%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+<tr>
+<td class="time">12:20</td>
+<td class="name">🚃 <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">鹿兒島機場 KOJ</a></td>
+<td>華航 CI119 起飛。<div class="exit-note">出口/乘車點：出境前留意航廈導引；CI119 起飛前依航空公司櫃台/安檢指示移動。</div><div class="links"><a href="https://www.koj-ab.co.jp/" rel="noopener" target="_blank">官方</a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Kagoshima%20Airport%2C%20Mizobecho%20Fumoto%2C%20Kirishima%2C%20Kagoshima%20899-6404%2C%20Japan" rel="noopener" target="_blank">地圖</a></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+<section class="day appendix" id="appendix-sheraton-shuttle-zh">
+<h2>附件 A｜Sheraton Kagoshima 接駁車官方 PDF 中文翻譯</h2>
+<p>原始 PDF：<a href="https://dailysocial.sheratonkagoshima.com/resourcefiles/pdf/shuttle-schedule.pdf" rel="noopener" target="_blank">シェラトン鹿児島 - 鹿児島中央駅間 シャトルバス時刻表とバス乗り場のご案内</a></p>
+
+<h3>1. 標題翻譯</h3>
+<p><strong>Sheraton Kagoshima 與鹿兒島中央站之間的接駁巴士時刻表與乘車處說明。</strong></p>
+
+<h3>2. 時刻表翻譯</h3>
+<table>
+<thead>
+<tr><th>時段</th><th>Sheraton Kagoshima 發 → 鹿兒島中央站 到</th><th>鹿兒島中央站 發 → Sheraton Kagoshima 到</th></tr>
+</thead>
+<tbody>
+<tr><td>09:00</td><td>無服務</td><td>09:45</td></tr>
+<tr><td>10:00</td><td>10:00、10:30</td><td>10:15、10:45</td></tr>
+<tr><td>11:00</td><td>11:00、11:30</td><td>11:15、11:45</td></tr>
+<tr><td>12:00</td><td>12:00、12:30</td><td>12:15、12:45</td></tr>
+<tr><td>13:00</td><td>13:00、13:30</td><td>13:15、13:45</td></tr>
+<tr><td>14:00</td><td>14:00、14:30</td><td>14:15、14:45</td></tr>
+<tr><td>15:00</td><td>15:00、15:30</td><td>15:15、15:45</td></tr>
+<tr><td>16:00</td><td>16:00、16:30</td><td>16:15、16:45</td></tr>
+<tr><td>17:00</td><td>17:00、17:30</td><td>17:15、17:45</td></tr>
+<tr><td>18:00</td><td>18:00、18:30</td><td>18:15、18:45</td></tr>
+<tr><td>19:00</td><td>19:00、19:30</td><td>19:15、19:45</td></tr>
+<tr><td>20:00</td><td>20:00、20:30</td><td>20:15、20:45</td></tr>
+<tr><td>21:00</td><td>21:00、21:30（末班）</td><td>21:15（末班）</td></tr>
+</tbody>
+</table>
+
+<h3>3. 注意事項翻譯</h3>
+<ul>
+<li>此接駁巴士僅供使用 Sheraton Kagoshima 的顧客搭乘。</li>
+<li>座位採先到先坐，並有座位定員限制。</li>
+<li>如果滿座，請搭乘下一班。</li>
+<li>巴士營運時刻可能不經預告變更。</li>
+<li>受交通狀況影響，巴士到達時間可能延誤。</li>
+</ul>
+
+<h3>4. 鹿兒島中央站出發的接駁車乘車處翻譯</h3>
+<ul>
+<li>前往 Sheraton Kagoshima 的接駁巴士，請在圖上標示 ☆ 的「鹿兒島中央 Terminal Building（Solaria Nishitetsu Hotel Kagoshima）」1 樓搭乘。</li>
+<li>請至「南國交通巴士總站」3 號乘車處搭乘。</li>
+<li>此處與機場巴士、高速巴士乘車處為同一個 Terminal。</li>
+</ul>
+
+<h3>5. 圖面文字翻譯</h3>
+<ul>
+<li>鹿兒島中央站周邊圖。</li>
+<li>鹿兒島中央 Terminal Building 巴士總站放大圖。</li>
+<li>Kagoshima Chuo Sta.：鹿兒島中央站。</li>
+<li>シェラトン鹿児島行き シャトルバスのりば：前往 Sheraton Kagoshima 的接駁車乘車處。</li>
+<li>Shuttle bus stop：接駁車乘車處。</li>
+</ul>
+
+<h3>6. 聯絡資訊翻譯</h3>
+<p>若對接駁車使用方式有任何疑問，請詢問現場工作人員，或聯絡 Sheraton Kagoshima。</p>
+<ul>
+<li>Sheraton Kagoshima</li>
+<li>地址：43-15 Koraicho, Kagoshima, 890-0051 Japan</li>
+<li>日本地址：〒890-0051 鹿兒島縣鹿兒島市高麗町 43-15</li>
+<li>電話：099-821-1111</li>
+</ul>
+
+<h3>7. 本行程套用</h3>
+<ul>
+<li>Day 1：抵達鹿兒島中央站後，不預設計程車；優先搭 13:45 鹿兒島中央站 → Sheraton Kagoshima 免費接駁車。</li>
+<li>上車點：鹿兒島中央 Terminal Building 1F，南國交通巴士總站 3 號乘車處。</li>
+<li>若 13:45 滿座、機場巴士延誤、行李太多或小孩狀況不佳，才改搭計程車。</li>
+<li>10:00 前從飯店出發的行程無法使用飯店接駁車，須改搭計程車或其他大眾運輸。</li>
+</ul>
+</section>
+<section class="day appendix" id="appendix-station-exit-notes">
+<h2>附件 B｜車站出口與乘車點判斷摘要</h2>
+<table>
+<thead><tr><th>地點</th><th>建議出口/乘車點</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>鹿兒島中央站</td><td>東口（桜島口）</td><td>AMU Plaza、BIC CAMERA、計程車、Terminal Building 方向。</td></tr>
+<tr><td>鹿兒島中央 Terminal Building</td><td>南國交通巴士總站 3 號</td><td>Sheraton Kagoshima 免費接駁車。</td></tr>
+<tr><td>鹿兒島中央 Terminal Building</td><td>南國交通巴士總站 1 號</td><td>鹿兒島空港行機場連絡巴士。</td></tr>
+<tr><td>鹿兒島機場</td><td>8 號月台</td><td>鹿兒島市內行機場連絡巴士。</td></tr>
+<tr><td>JR 仙巖園站</td><td>官方未列出口編號</td><td>出站後往仙巖園/磯地區方向。</td></tr>
+<tr><td>天文館通、市電各電停</td><td>地面電停，無出口編號</td><td>依下一目的地往天文館商店街、千日町、東千石町方向步行。</td></tr>
+</tbody>
+</table>
+<h3>資料來源</h3>
+<ul class="source-list">
+<li><a href="https://www.jrkyushu.co.jp/railway/station/1191491_1601.html" rel="noopener" target="_blank">JR 九州 鹿兒島中央站官方頁</a>：含站內圖 PDF 與東口（桜島口）等站內資訊。</li>
+<li><a href="https://www.jrkyushu.co.jp/railway/station/__icsFiles/afieldfile/2023/03/14/kagoshimacyuuoueki_kounaizu.pdf" rel="noopener" target="_blank">JR 九州 鹿兒島中央站構內圖 PDF</a>。</li>
+<li><a href="https://www.jrkyushu.co.jp/railway/station/1237198_1601.html" rel="noopener" target="_blank">JR 九州 仙巖園站官方頁</a>。</li>
+<li><a href="https://nangoku-kotsu.com/busstop/" rel="noopener" target="_blank">南國交通 巴士乘車處案內</a>：鹿兒島中央站周邊、鹿兒島中央 Terminal、鹿兒島機場乘車處。</li>
+<li><a href="https://dailysocial.sheratonkagoshima.com/resourcefiles/pdf/shuttle-schedule.pdf" rel="noopener" target="_blank">Sheraton Kagoshima 接駁車時刻與乘車處 PDF</a>。</li>
+<li><a href="https://www.kotsu-city-kagoshima.jp/" rel="noopener" target="_blank">鹿兒島市交通局</a>：市電、市巴士、City View 與 Island View 相關站點與票價。</li>
+</ul>
+</section>
+
+<section class="notice">
+  <strong>最新版決策：</strong>
+  ORIX 維持 7/14 08:00 取車、7/15 16:50 還車的連租兩天方案；不需要兒童座椅。連租會多一晚 Sheraton 停車費約 ¥1,500，但保留 Day 5 07:00 早出發霧島的行程品質。
+</section>
+
+
+<section class="notice">
+  <strong>交通策略修正：</strong>
+  能用大眾運輸與飯店接駁時，主線不預設計程車。Day 3 早上因 Sheraton 接駁車 10:00 才開始，無法銜接渡輪碼頭，因此改為市電＋步行；Day 6 六月燈返程優先用市電＋21:15 中央站接駁。計程車只列備援費用。
+</section>
+
+<p class="footer">本檔只整合目前對話已確認內容；營業時間、票價、班次與預約狀態仍需出發前再次核對官方公告。市電成人票價依目前官方公開價列 ¥170；若鹿兒島市於 2026 年 8 月後調整，已不影響本次 7 月行程。</p>
+</main>
+</body>
+</html>
